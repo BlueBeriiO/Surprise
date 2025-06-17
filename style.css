@@ -1,0 +1,60 @@
+body {
+  background-size: cover;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(2px);
+}
+.hint-box, .message-box {
+  background: rgba(0, 0, 0, 0.65);
+  margin: 10vh auto;
+  padding: 5vw;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 200, 255, 0.3);
+  animation: fadein 1.2s ease;
+}
+input, button {
+  font-size: 1.1rem;
+  padding: 12px;
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+}
+button {
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button#btn1 {
+  background: #ff69b4;
+  color: white;
+}
+button#btn1:hover {
+  background: #ff85c1;
+}
+button#btn2 {
+  background: #ffb347;
+  color: white;
+}
+button#btn2:hover {
+  background: #ffc078;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
