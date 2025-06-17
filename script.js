@@ -15,3 +15,16 @@ function checkScene2() {
     document.getElementById('msg').innerText = "❌ ยังไม่ถูก ลองนึกดีๆ นะ 😊";
   }
 }
+
+function checkScene1() {
+  const code = document.getElementById('code').value.trim();
+  if (code === "20240805") {
+    document.getElementById("successSound").play();
+    setTimeout(() => {
+      window.location.href = "./room2.html";
+    }, 1000); // รอให้เสียงเล่นก่อนเปลี่ยนหน้า
+  } else {
+    document.getElementById('msg').innerText = "❌ คำตอบผิด ลองนึกถึงวันพิเศษของเรา 💌";
+    document.getElementById("errorSound").play();
+  }
+}
